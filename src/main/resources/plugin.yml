@@ -1,0 +1,12 @@
+name: NoCraft
+version: '${project.version}'
+main: nocraft.nocraft.NoCraft
+api-version: 1.18
+authors: [ IvanTushynski ]
+description: Plugin for Teaderon
+
+commands:
+  lottery:
+    description: Teaderon Lottery
+    aliases:
+      - teaderonlottery
