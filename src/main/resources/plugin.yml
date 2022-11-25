@@ -1,9 +1,9 @@
-name: NoCraft
+name: Teaderon Plugin
 version: '${project.version}'
 main: nocraft.nocraft.NoCraft
 api-version: 1.18
 authors: [ IvanTushynski ]
-description: Plugin for Teaderon
+description: Plugin for Teaderon Minecraft Server
 
 commands:
   lottery:

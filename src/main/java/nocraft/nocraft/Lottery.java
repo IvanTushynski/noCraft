@@ -44,20 +44,20 @@ public class Lottery implements CommandExecutor {
             Player player = (Player) sender;
                 int[] exp = new int[100];
                 int check = (int) Math.floor(Math.random() * exp.length);
-                if (check >= 0 && check <= 30) {
+                if (check >= 0 && check <= 44) {
                     player.playSound(player.getLocation(), Sound.ENTITY_VILLAGER_NO, 1, 1);
                     player.sendTitle(ChatColor.RED + "Не Повезло....", ChatColor.RED + "Попробуйте Ещё", 2, 30, 2);
-                } else if (check >= 31 && check <= 50) {
-                    executeCommand(player, true, "eco give %player% 100");
+                } else if (check >= 45 && check <= 64) {
+                    executeCommand(player, true, "mi give MISCELLANEOUS SILVER_COIN %player% 1");
                     player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1, 1);
-                    player.sendTitle(ChatColor.GOLD + "Ваш Выигрыш Составил 100 Золотых Монет!", ChatColor.GOLD + "Поздравляем", 2, 30, 2);
+                    player.sendTitle(ChatColor.GOLD + "Ваш Выигрыш - Серебрянная Монета!", ChatColor.GOLD + "Поздравляем", 2, 30, 2);
                     //------------------------------
                     Firework firework = player.getPlayer().getWorld().spawn(player.getPlayer().getLocation(), Firework.class);
                     FireworkMeta data = (FireworkMeta) firework.getFireworkMeta();
                     data.addEffects(FireworkEffect.builder().withColor(Color.RED).withColor(Color.ORANGE).with(FireworkEffect.Type.BURST).withFlicker().build());
                     data.setPower(0);
                     firework.setFireworkMeta(data);
-                } else if (check >= 51 && check <= 70) {
+                } else if (check >= 65 && check <= 70) {
                     executeCommand(player, true, "mi give CONSUMABLE XP_DROP_LOTTERY %player% 1");
                     player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1, 1);
                     player.sendTitle(ChatColor.GOLD + "Ваш Выигрыш - Капсула на 1600 Очков Опыта!", ChatColor.GOLD + "Поздравляем", 2, 30, 2);
@@ -67,10 +67,51 @@ public class Lottery implements CommandExecutor {
                     data.addEffects(FireworkEffect.builder().withColor(Color.RED).withColor(Color.ORANGE).with(FireworkEffect.Type.BURST).withFlicker().build());
                     data.setPower(0);
                     firework.setFireworkMeta(data);
-                } else if (check >= 71 && check <= 100) {
+                } else if (check >= 71 && check <= 79) {
+                    executeCommand(player, true, "mi give MISCELLANEOUS TAVERNCOIN %player% 1");
+                    player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1, 1);
+                    player.sendTitle(ChatColor.GOLD + "Ваш Выигрыш - Монета Фреавеллской Таверны!", ChatColor.GOLD + "Поздравляем", 2, 30, 2);
+                    //------------------------------
+                    Firework firework = player.getPlayer().getWorld().spawn(player.getPlayer().getLocation(), Firework.class);
+                    FireworkMeta data = (FireworkMeta) firework.getFireworkMeta();
+                    data.addEffects(FireworkEffect.builder().withColor(Color.RED).withColor(Color.ORANGE).with(FireworkEffect.Type.BURST).withFlicker().build());
+                    data.setPower(0);
+                    firework.setFireworkMeta(data);
+
+                } else if (check >= 80 && check <= 85) {
+                    executeCommand(player, true, "mi give MISCELLANEOUS TEADERONCOIN %player% 1");
+                    player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1, 1);
+                    player.sendTitle(ChatColor.GOLD + "Ваш Выигрыш - Бадж Теадерона!", ChatColor.GOLD + "Поздравляем", 2, 30, 2);
+                    //------------------------------
+                    Firework firework = player.getPlayer().getWorld().spawn(player.getPlayer().getLocation(), Firework.class);
+                    FireworkMeta data = (FireworkMeta) firework.getFireworkMeta();
+                    data.addEffects(FireworkEffect.builder().withColor(Color.RED).withColor(Color.ORANGE).with(FireworkEffect.Type.BURST).withFlicker().build());
+                    data.setPower(0);
+                    firework.setFireworkMeta(data);
+                } else if (check >= 88 && check <= 93) {
                     executeCommand(player, true, "mi give CONSUMABLE XP_DROP_LOTTERY_TWO %player% 1");
                     player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1, 1);
                     player.sendTitle(ChatColor.GOLD + "Ваш Выигрыш - Капсула на 3800 Очков Опыта!", ChatColor.GOLD + "Поздравляем", 2, 30, 2);
+                    //------------------------------
+                    Firework firework = player.getPlayer().getWorld().spawn(player.getPlayer().getLocation(), Firework.class);
+                    FireworkMeta data = (FireworkMeta) firework.getFireworkMeta();
+                    data.addEffects(FireworkEffect.builder().withColor(Color.RED).withColor(Color.ORANGE).with(FireworkEffect.Type.BURST).withFlicker().build());
+                    data.setPower(0);
+                    firework.setFireworkMeta(data);
+                } else if (check >= 94 && check <= 98) {
+                    executeCommand(player, true, "mi give MISCELLANEOUS GOLD_COIN1 %player% 1");
+                    player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1, 1);
+                    player.sendTitle(ChatColor.GOLD + "Ваш Выигрыш - Золотая Монета!", ChatColor.GOLD + "Поздравляем", 2, 30, 2);
+                    //------------------------------
+                    Firework firework = player.getPlayer().getWorld().spawn(player.getPlayer().getLocation(), Firework.class);
+                    FireworkMeta data = (FireworkMeta) firework.getFireworkMeta();
+                    data.addEffects(FireworkEffect.builder().withColor(Color.RED).withColor(Color.ORANGE).with(FireworkEffect.Type.BURST).withFlicker().build());
+                    data.setPower(0);
+                    firework.setFireworkMeta(data);
+                } else if (check >= 99 && check <= 100) {
+                    executeCommand(player, true, "give %player% diamond 64");
+                    player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1, 1);
+                    player.sendTitle(ChatColor.DARK_RED + "!!!Джекпот - 64 Алмазов!!!", ChatColor.GOLD + "Поздравляем", 2, 30, 2);
                     //------------------------------
                     Firework firework = player.getPlayer().getWorld().spawn(player.getPlayer().getLocation(), Firework.class);
                     FireworkMeta data = (FireworkMeta) firework.getFireworkMeta();
