@@ -1,4 +1,4 @@
-name: Teaderon Plugin
+name: Teaderon
 version: '${project.version}'
 main: nocraft.nocraft.NoCraft
 api-version: 1.18
