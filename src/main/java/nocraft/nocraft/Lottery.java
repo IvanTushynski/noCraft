@@ -133,4 +133,3 @@ public class Lottery implements CommandExecutor {
         return true;
     }
 }
-///mi give MATERIAL SUMMONCAT1 admin 1

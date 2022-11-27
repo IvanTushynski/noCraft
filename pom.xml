@@ -6,7 +6,7 @@
 
     <groupId>TeaderonPlugin</groupId>
     <artifactId>TeaderonPlugin</artifactId>
-    <version>1.1</version>
+    <version>1.2</version>
     <packaging>jar</packaging>
 
     <name>NoCraft</name>

@@ -8,12 +8,14 @@ public final class NoCraft extends JavaPlugin {
     public void onEnable() {
         getServer().clearRecipes();
         Bukkit.getPluginManager().registerEvents(new fallDamage(), this);
+        Bukkit.getPluginManager().registerEvents(new AirLevel(), this);
+        Bukkit.getPluginManager().registerEvents(new FoodLevel(), this);
+        Bukkit.getPluginManager().registerEvents(new JoinEvent(), this);
         getCommand("teaderonlottery").setExecutor(new Lottery());
         Lottery.init();
     }
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
     }
 }
