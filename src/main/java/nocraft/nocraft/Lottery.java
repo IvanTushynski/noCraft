@@ -44,10 +44,10 @@ public class Lottery implements CommandExecutor {
             Player player = (Player) sender;
                 int[] exp = new int[100];
                 int check = (int) Math.floor(Math.random() * exp.length);
-                if (check >= 0 && check <= 44) {
+                if (check >= 0 && check <= 46) {
                     player.playSound(player.getLocation(), Sound.ENTITY_VILLAGER_NO, 1, 1);
                     player.sendTitle(ChatColor.RED + "Не Повезло....", ChatColor.RED + "Попробуйте Ещё", 2, 30, 2);
-                } else if (check >= 45 && check <= 67) {
+                } else if (check >= 47 && check <= 69) {
                     executeCommand(player, true, "mi give MISCELLANEOUS SILVER_COIN %player% 1");
                     player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1, 1);
                     player.sendTitle(ChatColor.GOLD + "Ваш Выигрыш - Серебрянная Монета!", ChatColor.GOLD + "Поздравляем", 2, 30, 2);
@@ -57,7 +57,7 @@ public class Lottery implements CommandExecutor {
                     data.addEffects(FireworkEffect.builder().withColor(Color.RED).withColor(Color.ORANGE).with(FireworkEffect.Type.BURST).withFlicker().build());
                     data.setPower(0);
                     firework.setFireworkMeta(data);
-                } else if (check >= 68 && check <= 74) {
+                } else if (check >= 70 && check <= 76) {
                     executeCommand(player, true, "mi give CONSUMABLE XP_DROP_LOTTERY %player% 1");
                     player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1, 1);
                     player.sendTitle(ChatColor.GOLD + "Ваш Выигрыш - Капсула на 1600 Очков Опыта!", ChatColor.GOLD + "Поздравляем", 2, 30, 2);
@@ -67,7 +67,7 @@ public class Lottery implements CommandExecutor {
                     data.addEffects(FireworkEffect.builder().withColor(Color.RED).withColor(Color.ORANGE).with(FireworkEffect.Type.BURST).withFlicker().build());
                     data.setPower(0);
                     firework.setFireworkMeta(data);
-                } else if (check >= 75 && check <= 82) {
+                } else if (check >= 77 && check <= 85) {
                     executeCommand(player, true, "mi give MISCELLANEOUS TAVERNCOIN %player% 1");
                     player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1, 1);
                     player.sendTitle(ChatColor.GOLD + "Ваш Выигрыш - Монета Фреавеллской Таверны!", ChatColor.GOLD + "Поздравляем", 2, 30, 2);
@@ -78,7 +78,7 @@ public class Lottery implements CommandExecutor {
                     data.setPower(0);
                     firework.setFireworkMeta(data);
 
-                } else if (check >= 83 && check <= 88) {
+                } else if (check >= 86 && check <= 91) {
                     executeCommand(player, true, "mi give MISCELLANEOUS TEADERONCOIN %player% 1");
                     player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1, 1);
                     player.sendTitle(ChatColor.GOLD + "Ваш Выигрыш - Бадж Теадерона!", ChatColor.GOLD + "Поздравляем", 2, 30, 2);
@@ -88,7 +88,7 @@ public class Lottery implements CommandExecutor {
                     data.addEffects(FireworkEffect.builder().withColor(Color.RED).withColor(Color.ORANGE).with(FireworkEffect.Type.BURST).withFlicker().build());
                     data.setPower(0);
                     firework.setFireworkMeta(data);
-                } else if (check >= 89 && check <= 94) {
+                } else if (check >= 92 && check <= 96) {
                     executeCommand(player, true, "mi give CONSUMABLE XP_DROP_LOTTERY_TWO %player% 1");
                     player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1, 1);
                     player.sendTitle(ChatColor.GOLD + "Ваш Выигрыш - Капсула на 3800 Очков Опыта!", ChatColor.GOLD + "Поздравляем", 2, 30, 2);
@@ -98,7 +98,7 @@ public class Lottery implements CommandExecutor {
                     data.addEffects(FireworkEffect.builder().withColor(Color.RED).withColor(Color.ORANGE).with(FireworkEffect.Type.BURST).withFlicker().build());
                     data.setPower(0);
                     firework.setFireworkMeta(data);
-                } else if (check >= 95 && check <= 96) {
+                } else if (check >= 97 && check <= 98) {
                     executeCommand(player, true, "mi give MISCELLANEOUS GOLD_COIN1 %player% 1");
                     player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1, 1);
                     player.sendTitle(ChatColor.GOLD + "Ваш Выигрыш - Золотая Монета!", ChatColor.GOLD + "Поздравляем", 2, 30, 2);
@@ -108,7 +108,7 @@ public class Lottery implements CommandExecutor {
                     data.addEffects(FireworkEffect.builder().withColor(Color.RED).withColor(Color.ORANGE).with(FireworkEffect.Type.BURST).withFlicker().build());
                     data.setPower(0);
                     firework.setFireworkMeta(data);
-                } else if (check >= 97 && check <= 98) {
+                } else if (check == 99) {
                     executeCommand(player, true, "mi give MATERIAL SUMMONCAT1 %player% 1");
                     player.playSound(player.getLocation(), Sound.MUSIC_DRAGON, 1, 1);
                     player.sendTitle(ChatColor.DARK_RED + "!!!Джекпот - Питомец!!!", ChatColor.GOLD + "Поздравляем", 2, 30, 2);
@@ -118,7 +118,7 @@ public class Lottery implements CommandExecutor {
                     data.addEffects(FireworkEffect.builder().withColor(Color.RED).withColor(Color.ORANGE).with(FireworkEffect.Type.BURST).withFlicker().build());
                     data.setPower(0);
                     firework.setFireworkMeta(data);
-                } else if (check >= 99 && check <= 100) {
+                } else if (check == 100) {
                     executeCommand(player, true, "give %player% diamond 64");
                     player.playSound(player.getLocation(), Sound.MUSIC_DRAGON, 1, 1);
                     player.sendTitle(ChatColor.DARK_RED + "!!!Джекпот - 64 Алмазов!!!", ChatColor.GOLD + "Поздравляем", 2, 30, 2);
