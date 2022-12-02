@@ -12,7 +12,6 @@ public class JoinEvent implements Listener {
     public void onJoinEvent(final PlayerJoinEvent pj) {
 
             Player p = pj.getPlayer();
-        p.sendMessage(ChatColor.GOLD + "СОЦСЕТИ:");
         p.sendMessage(ChatColor.DARK_AQUA + "---Сообщество в VK---");
         p.sendMessage(ChatColor.WHITE + "https://vk.com/teaderon");
         p.sendMessage(ChatColor.BLUE + "---Дискорд Сервер---");
